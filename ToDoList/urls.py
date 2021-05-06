@@ -19,5 +19,7 @@ from listArea import views as list_view
 
 urlpatterns = [
     path('',list_view.toDoList,name='toDoList'),
+    path('addtodo/',list_view.addtodo,name='addtodo'),
+     path('deltodo/<int:todo_id>',list_view.deltodo,name='deltodo'),
     path('admin/', admin.site.urls),
 ]
